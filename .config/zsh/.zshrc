@@ -7,8 +7,8 @@ plug "zap-zsh/vim"
 
 # >>> Local Plugin <<<
 source $HOME/.config/zsh/plugin/aliases.zsh
-# source $HOME/script/bettercd.sh
-# source $HOME/script/bd.sh
+source $HOME/script/bettercd.sh
+source $HOME/script/bd.sh
 
 # >>> Keybind <<<
 # bindkey '^l' autosuggest-accept 
@@ -18,6 +18,6 @@ autoload -Uz compinit
 compinit
 
 # zoxide need to be called after compinit
-# eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh)"
 
 eval "$(starship init zsh)"
