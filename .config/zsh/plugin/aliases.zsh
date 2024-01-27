@@ -42,4 +42,7 @@ alias nvconf='cd $HOME/.config/nvim/'
 alias lgit='lazygit'
 
 # cat bat
+if ![ which bat ]; then
+  alias bat='batcat'
+fi
 alias cat='bat'
