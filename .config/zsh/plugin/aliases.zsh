@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # lsd
 # alias ls='lsd'
@@ -42,7 +42,7 @@ alias nvconf='cd $HOME/.config/nvim/'
 alias lgit='lazygit'
 
 # cat bat
-if ![ which bat ]; then
+if ! command -v bat > /dev/null 2>&1; then
   alias bat='batcat'
 fi
 alias cat='bat'
